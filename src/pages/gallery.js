@@ -24,9 +24,7 @@ export default function Gallery() {
                         <section data-aos="fade-right"
                             data-aos-offset="300"
                             data-aos-easing="ease-in-sine"></section>
-                        <section data-aos="fade-right"
-                            data-aos-offset="300"
-                            data-aos-easing="ease-in-sine"></section>
+                        <section></section>
                     </span>
                     <span className="" style={{ width: '100%' }}>
                         <section data-aos="fade-left"
@@ -43,8 +41,7 @@ export default function Gallery() {
                     <section data-aos="fade-up"
                         data-aos-duration="3000"></section>
                 </span>
-                <button data-aos="fade-up"
-                    data-aos-duration="3000" onClick={handleHide}>Kirim Ucapan</button>
+                <button onClick={handleHide}>Kirim Ucapan</button>
                 {hide && (
                     <div className="greet">
                         <div className="inputUcapan mb-5">
