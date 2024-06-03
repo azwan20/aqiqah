@@ -12,7 +12,7 @@ export default function Homes({handleNavbar}) {
                     <p>Bapak/Ibu</p>
                     <h5 className="mt-4">Fitrah Asfar S.kom</h5>
                 </span>
-                <button onClick={handleNavbar} data-aos="fade-up">Buka Undangan</button>
+                <button onClick={handleNavbar}>Buka Undangan</button>
             </div>
         </>
     )
