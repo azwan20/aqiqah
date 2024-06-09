@@ -279,8 +279,10 @@ body{
 }
 
 .forHome{
-  position: absolute;
-  left: 37%;
+  /* position: absolute;
+  left: 37%; */
+  background: url('/forHome.png');
+  width: 100%;
 }
 
 
@@ -319,12 +321,16 @@ body{
     right: 7% !important;
   }
 
+  .homes{
+    padding: 0 !important;
+  }
+
   .homes .forHome{
-    position: absolute;
-    /* left: 37%; */
+    /* position: absolute;
     left: 6%;
-    top: 39%;
-    width: 90%;
+    top: 39%; */
+    left: 0;
+    width: 100%;
   }
 
   .gallery span section {
