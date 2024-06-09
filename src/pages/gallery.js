@@ -15,33 +15,35 @@ export default function Gallery() {
                 <h5 data-aos-anchor-placement="bottom-bottom" className="mt-2 mb-5">GALLERY, UCAPAN & DOA</h5>
                 <span className="d-flex" style={{ width: '100%' }}>
                     <span className="me-2" style={{ width: '100%' }}>
-                        <section data-aos="fade-right"
+                        <section className="section-bg1" data-aos="fade-right"
                             data-aos-offset="300"
-                            data-aos-easing="ease-in-sine"></section>
-                        <section data-aos="fade-right"
+                            data-aos-easing="ease-in-sine">
+                        </section>
+                        <section className="section-bg2" data-aos="fade-right"
                             data-aos-offset="300"
-                            data-aos-easing="ease-in-sine"></section>
-                        <section data-aos="fade-right"
-                            data-aos-offset="300"
-                            data-aos-easing="ease-in-sine"></section>
-                        <section></section>
+                            data-aos-easing="ease-in-sine">
+                        </section>
                     </span>
                     <span className="" style={{ width: '100%' }}>
-                        <section data-aos="fade-left"
+                        <section className="section-bg3" data-aos="fade-left"
                             data-aos-anchor="#example-anchor"
                             data-aos-offset="500"
-                            data-aos-duration="500" style={{ height: '125px' }}></section>
-                        <section data-aos="fade-left"
+                            data-aos-duration="500">
+                        </section>
+                        <section className="section-bg4" data-aos="fade-left"
                             data-aos-anchor="#example-anchor"
                             data-aos-offset="500"
-                            data-aos-duration="500" style={{ height: '125px' }}></section>
+                            data-aos-duration="500">
+                        </section>
                     </span>
                 </span>
                 <span>
-                    <section data-aos="fade-up"
-                        data-aos-duration="3000"></section>
+                    <section className="section-bg5" data-aos="fade-up"
+                        data-aos-duration="3000">
+                    </section>
                 </span>
-                <button onClick={handleHide}>Kirim Ucapan</button>
+                <button
+                    onClick={handleHide}>Kirim Ucapan</button>
                 {hide && (
                     <div className="greet">
                         <div className="inputUcapan mb-5">

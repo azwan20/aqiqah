@@ -163,12 +163,35 @@ body{
   color: #000;
 }
 
-.gallery span section{
+.gallery span section {
   width: 100%;
-  height: 60px;
-  background-color: var(--primary-color);
   margin: 0 5px 5px 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 125px;
 }
+
+.section-bg1 {
+  background-image: url('https://c.ndtvimg.com/2021-04/ld9b9m4_newborn-650_625x300_01_April_21.jpg');
+}
+
+.section-bg2 {
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5b7c53374611a01623de550d/1549852011481-OND1EXG2N0UPR3HDH6G5/blanket-baby-article.jpg');
+}
+
+.section-bg3 {
+  background-image: url('https://cdn.webshopapp.com/shops/21094/files/382292145/500x400x1/leuke-baby-weetjes-over-babys-en-kinderen-raak-je.jpg');
+}
+
+.section-bg4 {
+  background-image: url('https://amp.infranken.de/storage/image/2/7/1/8/3958172_mit-ihrer-koerpersprache-teilen-babys-ihr-befinden-und-ihre-beduerfnisse-mi_amp-large_1ArrXe_76ugOa.jpg');
+}
+
+.section-bg5 {
+  background-image: url('https://image.eltern.de/12804756/t/kI/v3/w1440/r1.5/-/wie-babys-lebewesen-erkennen.jpg');
+}
+
 
 .greet {
   display: flex;
@@ -255,6 +278,11 @@ body{
   justify-content: center;
 }
 
+.forHome{
+  position: absolute;
+  left: 37%;
+}
+
 
 @media screen and (min-width: 221px) and (max-width: 480px) {
 
@@ -289,6 +317,19 @@ body{
 
   .sound {
     right: 7% !important;
+  }
+
+  .homes .forHome{
+    position: absolute;
+    /* left: 37%; */
+    left: 6%;
+    top: 39%;
+    width: 90%;
+  }
+
+  .gallery span section {
+    width: 100%;
+    height: 100px;
   }
 
 }
