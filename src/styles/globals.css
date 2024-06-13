@@ -1,98 +1,109 @@
-:root{
-  --primary-color: #581D35;
-  --secondary-color: #EEE4B1;
+:root {
+  --primary-color: #ECECEC;
+  --secondary-color: #0C359E;
+  --third-color: #1C3D6F;
+  --four-color: #0C359E;
+  --five-colors: #FFE3CA;
 }
 
-body{
-  width: 100%;
-  height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  height: 90vh;
 }
 
-.home{
+.home {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
+  /* justify-content: center; */
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ececec;
+}
+
+.home .contentUtama {
+  width: 30%;
+  height: 100%;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  gap: 70px;
+  background: url('/bg2.png'), url('/bg1.png'), #fff;
+  background-position: left top, right bottom;
+  background-repeat: no-repeat no-repeat;
+  background-size: 80%, 80%;
   font-family: "Gowun Batang", serif;
 }
 
-.home .content{
-  width: 30%;
-  height: 90%;
+.home .contentUtama .sound {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--four-color);
+  position: absolute;
+  top: 70%;
+  z-index: 0;
+  /* bottom: 15%; */
+  right: 37%;
+  display: flex;
+}
+
+.homes {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.homes h1 {
+  font-size: 22px;
+}
+
+.home .nama{
+  height: 300px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  background: url("/bgUtama.png");
-  background-size: cover;
+  background: url('/bingkai1.png');
+  background-size: 140%;
   background-position: center center;
   background-repeat: no-repeat no-repeat;
 }
 
-.home .content>*{
-  
-  padding: 0 50px;
-}
-
-.homes{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  color: var(--primary-color);
-}
-
-.homes .imgHome img{
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-}
-
-.homes p{
-  margin: 0;
-  color: black;
-}
-
-.homes button, .gallery button{
-  width: fit-content;
-  background-color: var(--primary-color);
-  border-radius: 20px;
-  padding: 5px 10px;
-  border: none;
-  color: #fff;
-  margin: 20px auto 0;
-}
-
-.identitas img{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid var(--primary-color);
-}
-
-.identitas h4{
-  width: 70%;
-  text-align: center;
-  margin: auto;
-  color: var(--primary-color);
-  line-height: 1.7;
-}
-
-.identitas p{
-  line-height: 1.1;
-}
-
-.identitas h4, .homes h4{
-  font-family: "Jockey One", sans-serif;
-  font-weight: 900;
+.homes .nama h1 {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-size: 50px;
   font-style: normal;
+  margin: 0px;
+}
 
+.homes h5 {
+  font-family: "Lalezar", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--four-color);
+}
+
+.homes button {
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--four-color);
+  color: #fff;
+}
+
+
+.contentUtama section {
+  text-align: center;
+}
+
+.contentUtama section p {
+  margin: 0;
 }
 
 .navbar {
@@ -100,9 +111,9 @@ body{
   overflow-x: auto;
   height: 10%;
   display: flex;
-  background-color: var(--primary-color);
-  /* position: absolute;
-  bottom: 0%; */
+  background-color: var(--third-color);
+  position: absolute;
+  bottom: 0%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -111,13 +122,12 @@ body{
 .navbar .navbar-item {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 .navbar section {
   height: 50px;
   width: 50px;
-  background-color: var(--secondary-color);
+  background-color: var(--five-colors);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -136,108 +146,170 @@ body{
   color: var(--four-color) !important; 
 }
 
-.acara section{
-  width: 70px;
-  height: 50px;
-  background-color: var(--primary-color);
-  border-radius: 10px;
-  color: #fff;
-  text-align: center;
+.navbar svg path{
+  fill: var(--four-color) !important;
 }
 
-.acara section p{
-  margin: 0;
+.quran>section,
+.salam>section,
+.gift section {
+  padding: 5px 30px;
 }
 
-.maps section{
-  height: 250px;
+.quran {
   width: 100%;
-  background-color: #fff;
-  border: 1px solid var(--primary-color);
-  border-radius: 10px;
-  margin: 20px 0;
-  padding: 0 !important;
-}
-
-.thanks p{
-  color: #000;
-}
-
-.gallery span section {
-  width: 100%;
-  margin: 0 5px 5px 0;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 125px;
-}
-
-.section-bg1 {
-  background-image: url('https://c.ndtvimg.com/2021-04/ld9b9m4_newborn-650_625x300_01_April_21.jpg');
-}
-
-.section-bg2 {
-  background-image: url('https://images.squarespace-cdn.com/content/v1/5b7c53374611a01623de550d/1549852011481-OND1EXG2N0UPR3HDH6G5/blanket-baby-article.jpg');
-}
-
-.section-bg3 {
-  background-image: url('https://cdn.webshopapp.com/shops/21094/files/382292145/500x400x1/leuke-baby-weetjes-over-babys-en-kinderen-raak-je.jpg');
-}
-
-.section-bg4 {
-  background-image: url('https://amp.infranken.de/storage/image/2/7/1/8/3958172_mit-ihrer-koerpersprache-teilen-babys-ihr-befinden-und-ihre-beduerfnisse-mi_amp-large_1ArrXe_76ugOa.jpg');
-}
-
-.section-bg5 {
-  background-image: url('https://image.eltern.de/12804756/t/kI/v3/w1440/r1.5/-/wie-babys-lebewesen-erkennen.jpg');
-}
-
-
-.greet {
-  display: flex;
-  flex-direction: column;
   height: 100%;
-  width: 30%;
+  padding: 0 20px;
+  background:  url('/bingkai.png');
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+}
+
+.quran p {
+  font-size: 14px;
+}
+
+.quran img{
+  width: 90px;
+  position: absolute;
+  top: 25%;
+  left: 41%;
+}
+
+.salam p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.salam h3{
+  color: var(--four-color);
+}
+
+.salam section div{
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid var(--four-color);
+  background-color: var(--five-colors);
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.9); 
+  color: var(--four-color);
+  font-weight: 800;
 }
 
-.padding{
-  padding: 0 !important;
+.mempelai h3 {
+  font-family: "Lobster", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--four-color);
 }
 
-.gallery button, .gallery svg{
-  cursor: pointer;
+.mempelai p,
+.maps p {
+  margin: 0px auto !important;
+  font-weight: 300;
 }
 
+.mempelai section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
 
-.inputUcapan {
-  height: 40%;
+.mempelai section div, .mempelai section img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.mempelai section img{
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-position: top center;
+}
+
+.imgStat{
+  height: 120px !important;
+  width: 120px !important;
+  /* margin-bottom: 30px; */
+}
+
+.maps button,
+.gift>* button {
+  background-color: var(--five-colors);
+  color: var(--four-color);
+  padding: 7px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--four-color);
+  margin: 0 auto auto;
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.maps .map {
   width: 80%;
+  height: 40%;
+  margin: auto auto 0;
+}
+
+.maps a{
+  margin: 0 auto auto;
+}
+
+.gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  /* padding: 50px 20px 100px; */
+}
+
+.gift>* {
+  /* height: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.containInput .inputUcapan {
+  height: 50%;
+  width: 90%;
   margin: 0 auto;
   padding: 10px;
   border-radius: 10px;
   max-height: 50%;
   overflow-y: auto;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 99;
 }
 
-.inputUcapan section {
+.containInput .inputUcapan section {
   border-radius: 10px;
   background-color: #fff;
   width: 100%;
-  height: fit-content !important;
+  height: fit-content;
   text-align: left;
   padding: 7px;
 }
 
-.inputUcapan button {
+.containInput .inputUcapan button {
   background-color: var(--third-color);
   padding: 0 10px;
   color: #fff;
@@ -247,58 +319,60 @@ body{
   margin: 0 !important;
 }
 
-.inputUcapan .inputan {
+.gift .inputan {
   gap: 10px;
   margin-top: 50px;
 }
 
-.inputUcapan p {
-  margin: 0;
+.gift .rek{
+  background-color: var(--third-color);
+  width: fit-content;
+  border-radius: 20px;
+  color: #fff;
+  padding: 5px;
 }
 
-.homes, .gallery .acara, .identitas, .maps, .thanks{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.home .sound {
-  width: 50px;
-  height: 50px;
-  padding: 0 !important;
-  border-radius: 50%;
-  background-color: var(--primary-color);
+.containInput{
   position: absolute;
-  top: 70%;
-  z-index: 99;
-  right: 37%;
+    width: 30%;
+    background-color: rgba(126, 143, 240, 0.9); 
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg{
+  cursor: pointer;
+}
+
+.gallery{
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.forHome{
-  /* position: absolute;
-  left: 37%; */
-  background: url('/forHome.png');
-  width: 100%;
+.gallery section div{
+  width: 100px;
+  height: 100px;
+  background-color: var(--five-colors);
 }
 
+.gallery h3{
+  color: var(--four-color);
+}
 
 @media screen and (min-width: 221px) and (max-width: 480px) {
 
-  body{
-    height: 90vh;
-    width: 100%;
-  }
-
-  .home {
+  .home, .containInput {
     width: 100%;
     height: 90vh;
   }
 
-  .home .content {
+  .home .contentUtama {
     width: 100%;
     height: 90%;
   }
@@ -306,36 +380,33 @@ body{
   .navbar {
     height: 10%;
     width: 100%;
-    padding: 0;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
-  .greet{
-    width: 100%;
+  .navbar .navbar-item{
+    /* width: 100%; */
   }
 
-  .acara section{
-    width: 60px;
+  .gift {
+    /* padding: 20px 20px 70px; */
+  }
+
+  .gift h4 {
+    margin-bottom: 0 !important;
+    color: var(--four-color) !important;
   }
 
   .sound {
     right: 7% !important;
   }
 
-  .homes{
-    padding: 0 !important;
+  .inputUcapan{
+    max-height: 60% !important;
+    height: 60% !important;
   }
-
-  .homes .forHome{
-    /* position: absolute;
-    left: 6%;
-    top: 39%; */
-    left: 0;
-    width: 100%;
-  }
-
-  .gallery span section {
-    width: 100%;
-    height: 100px;
-  }
-
 }

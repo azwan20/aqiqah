@@ -1,11 +1,14 @@
-import Identitas from "./identitas";
+import { useState, useEffect, useRef } from "react";
+import Gift from "./rscv";
 import Homes from "./home";
-import Navbar from "./navbar";
-import Acara from "./acara";
 import Maps from "./maps";
-import Thanks from "./thanks";
+import Mempelai from "./mempelai";
+import Navbar from "./navbar";
+import Quran from "./quran";
+import Salam from "./salam";
+import Thanks from "./gift";
+import Thankss from "./thanks";
 import Gallery from "./gallery";
-import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -41,27 +44,31 @@ export default function Home() {
       case 0:
         return <Homes handleNavbar={handleNavbar} />;
       case 1:
-        return <Identitas />;
+        return <Quran />;
       case 2:
-      return <Acara/>;
+        return <Mempelai />;
       case 3:
-      return <Maps />;
+        return <Salam />;
       case 4:
-      return <Gallery />;
+        return <Maps />;
       case 5:
-      return <Thanks />;
+        return <Gift />;
+      case 6:
+        return <Gallery />;
+      case 7:
+        return <Thanks />;
+      case 8:
+        return <Thankss />;
       default:
         return <div>Select an item</div>;
     }
   };
 
-
-
   return (
     <>
       <div className="home">
-        <div className="content">
-          <audio ref={audioRef} src="yanabi.mp3" loop autoplay />
+        <div className="contentUtama">
+          <audio ref={audioRef} src="dipertigamalam.mp3" loop autoplay />
           <div className="sound" onClick={handleSound}>
             {!sound ? (
               <svg className="m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
