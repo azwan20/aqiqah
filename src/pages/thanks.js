@@ -1,33 +1,21 @@
-import Navbar from "./navbar";
-
-export default function Thankss() {
-    const nama = [
-        "Bapak Jamaluddin",
-        "Ibu Maimunah ",
-        "Dr. Fatahillah",
-        "Ibu Hajar",
-        "Keluarga Ambongi",
-        "Kedua mempelai",
-    ]
+export default function Thanks() {
     return (
         <>
-            <div className="px-3">
-                <section className="d-flex w-100 align-items-center justify-content-center">
-                    <img className="imgStat" src="/imgLogo.png" />
-                </section>
-                <section className="mb-5 px-2 fw-bolder">
-                    <p className="fw-bolder m-0">Merupakan suatu kebahagiaan dan kehormatan apabila bapak/ibu saudara(i) berkenan untuk hadir dan memberikan do’a restu kepada kami kedua mempelai</p>
-                </section>
-                <section>
-                    <h3 className="mb-3" style={{color: '#0C359E'}}>HORMAT  KAMI</h3>
-                    <span className="my-4">
-                        {nama.map((item, index) => (
-                            <span key={item} className="my-0" style={{ color: '#581D35' }}>
-                                <p className="my-0">{item}</p>
-                            </span>
-                        ))}
-                    </span>
-                </section>
+            <div className="thanks d-flex justify-content-evenly flex-column" style={{height: '80%'}}>
+            <img className="mx-auto mb-3" src="/ikon.png" width={80} />
+                <h5>TERIMA KASIH</h5>
+                <p>Merupakan suatu kebahagiaan bagi kami
+                    atas kehadiran dan partisipasi anda dalam
+                    acara tasyakuran kami
+                </p>
+                <span>
+                    <p>
+                        Hormat kami yang mengundang
+                    </p>
+                    <b>
+                        Ir. Fitrah Asfar & ibu Sulistiana
+                    </b>
+                </span>
             </div>
         </>
     )

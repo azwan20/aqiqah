@@ -1,14 +1,11 @@
-import { useState, useEffect, useRef } from "react";
-import Gift from "./rscv";
+import Identitas from "./identitas";
 import Homes from "./home";
-import Maps from "./maps";
-import Mempelai from "./mempelai";
 import Navbar from "./navbar";
-import Quran from "./quran";
-import Salam from "./salam";
-import Thanks from "./gift";
-import Thankss from "./thanks";
+import Acara from "./acara";
+import Maps from "./maps";
+import Thanks from "./thanks";
 import Gallery from "./gallery";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -44,31 +41,27 @@ export default function Home() {
       case 0:
         return <Homes handleNavbar={handleNavbar} />;
       case 1:
-        return <Quran />;
+        return <Identitas />;
       case 2:
-        return <Mempelai />;
+      return <Acara/>;
       case 3:
-        return <Salam />;
+      return <Maps />;
       case 4:
-        return <Maps />;
+      return <Gallery />;
       case 5:
-        return <Gift />;
-      case 6:
-        return <Gallery />;
-      case 7:
-        return <Thanks />;
-      case 8:
-        return <Thankss />;
+      return <Thanks />;
       default:
         return <div>Select an item</div>;
     }
   };
 
+
+
   return (
     <>
       <div className="home">
-        <div className="contentUtama">
-          <audio ref={audioRef} src="dipertigamalam.mp3" loop autoplay />
+        <div className="content">
+          <audio ref={audioRef} src="yanabi.mp3" loop autoplay />
           <div className="sound" onClick={handleSound}>
             {!sound ? (
               <svg className="m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
